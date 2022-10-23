@@ -29,6 +29,7 @@ function onClick(e) {
   function onEscKeyPress(e) {
     if (e.code === "Escape") {
       largeImg.close();
+      window.removeEventListener("keydown", onEscKeyPress);
     }
   }
 }
